@@ -1,0 +1,119 @@
+::-webkit-scrollbar {
+	width: 0;
+}
+::selection {
+	background: transparent;
+}
+::-moz-selection {
+	background: transparent;
+}
+
+body, html {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	font-family: "Roboto";
+	justify-content: center;
+}
+
+.Body {
+	max-width: 320px;
+	max-height: 575px;
+	position: absolute;
+	display: block;
+	overflow-y: auto;
+	right: 20rem;
+}
+
+.Container {
+	margin: 1rem;
+}
+
+.btn {
+	color: #ccc;
+	border: none;
+	outline: none;
+	display: block;
+	font-size: 16px;
+	min-height: 30px;
+	max-height: 58px;
+	min-width: 280px;
+	margin-bottom: 5px;
+	position: relative;
+	border-radius: 4px;
+	padding: 20px 20px 20px 15px;
+	background: rgba(15,15,15,0.75);
+}
+
+.btn::before, .normalbutton::before {
+	top: 20%;
+	left: -2px;
+	width: 4px;
+	height: 60%;
+	bottom: 20%;
+	content: "";
+	border-radius: 4px;
+	position: absolute;
+	background: #4f4f4f;
+}
+
+.btn:hover, .normalbutton:hover {
+	background: rgba(10,10,10,0.75);
+}
+
+.btn:hover::before, .normalbutton:hover::before {
+	background: #4182E2;
+}
+
+.title {
+	float: left;
+	font-size: 15px;
+	margin-top: -9px;
+	text-align: left;
+}
+
+.description {
+	color: #898989;
+	font-size: 11px;
+	margin-top: 13px;
+	text-align: left;
+	letter-spacing: 0.8px;
+}
+
+.description yellow {
+	color: #ffd97b;
+}
+
+.normalbutton {
+	color: #ccc;
+	display: block;
+	font-size: 16px;
+	cursor: default;
+	min-width: 243px;
+	margin-bottom: 5px;
+	position: relative;
+	border-radius: 4px;
+	padding: 20px 20px 12px 14px;
+	background: rgba(15, 15, 15, 0.75);
+}
+
+.amarelo::before {
+	top: 20%;
+	left: -2px;
+	width: 4px;
+	height: 60%;
+	bottom: 20%;
+	content: "";
+	position: absolute;
+	background: #54c941;
+}
+
+.amarelo:hover::before {
+	background: #80e470;
+}
+
+.amarelo .description {
+	color: #fff;
+	opacity: 0.4;
+}

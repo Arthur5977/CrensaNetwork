@@ -1,0 +1,46 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	overflow: hidden;
+	background: transparent;
+	font-family: "Roboto";
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+#SlotMachine {
+	color: #ccc;
+	right: 30px;
+	width: 237px;
+	bottom: 125px;
+	display: none;
+	padding: 20px;
+	position: absolute;
+	text-shadow: 1px 1px #000;
+}
+
+.Button {
+	float: left;
+	color: #C8DEFF;
+	font-size: 14px;
+	margin-top: 15px;
+	text-shadow: none;
+	padding: 6px 10px;
+	text-align: center;
+	border-radius: 100%;
+	background: #4182e2;
+	box-shadow: 0 0 10px #000;
+}
+
+.Legends {
+	float: left;
+	font-size: 13px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+	padding: 7px 0 7px 10px;
+}

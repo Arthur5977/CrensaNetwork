@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	cursor: default;
+	font-size: 11px;
+	overflow: hidden;
+	font-family: "Roboto";
+	box-sizing: border-box;
+	background: transparent;
+}
+
+:focus { outline: 0; }
+u { text-decoration: none; }
+::-webkit-scrollbar { width: 0; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: transparent; }
+::-webkit-scrollbar-thumb:hover { background: transparent; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#Request {
+	width: 450px;
+	bottom: 100px;
+	display: none;
+	position: absolute;
+	left: calc(50% - 225px);
+}
+
+#RequestM {
+	color: #ccc;
+	float: left;
+	width: 400px;
+	padding: 25px;
+	font-size: 14px;
+	margin-top: 25px;
+ 	line-height: 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	font-family: "Roboto";
+	background: rgba(15,15,15,.75);
+}
+
+#RequestM b {
+	color: #fff;
+	font-weight: 300;
+}
+
+#RequestY {
+	float: left;
+	width: 200px;
+	color: #d6ffea;
+	font-size: 13px;
+	border-radius: 6px;
+	position: relative;
+	padding: 20px 10px;
+	margin-right: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Roboto";
+	background: rgba(43,135,86,.75);
+}
+
+#RequestU {
+	float: left;
+	width: 200px;
+	color: #fedcdc;
+	font-size: 13px;
+	border-radius: 6px;
+	position: relative;
+	padding: 20px 10px;
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: "Roboto";
+	background: rgba(237,105,106,.75);
+}
+
+#RequestY::before {
+	left: 95px;
+	width: 27px;
+	color: #ccc;
+	content: "Y";
+	bottom: -15px;
+	font-size: 14px;
+	position: absolute;
+	border-radius: 100%;
+	padding: 7px 0 6px 2px;
+	background: rgba(15,15,15,.75);
+}
+
+#RequestU::before {
+	left: 95px;
+	width: 26px;
+	color: #ccc;
+	content: "U";
+	bottom: -15px;
+	font-size: 14px;
+	position: absolute;
+	border-radius: 100%;
+	padding: 7px 0 6px 3px;
+	background: rgba(15,15,15,.75);
+}

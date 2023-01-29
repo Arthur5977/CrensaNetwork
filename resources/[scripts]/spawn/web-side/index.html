@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hensa Rewritten</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<div id="charPage"></div>
+		<div id="spawnPage"></div>
+		<div id="createPage">
+			<div id="createCharForm">
+				<div class="SpawnCreateTitle">Criação</div>
+				<div class="SpawnCreateSubtitle">Preencha as informações abaixo</div>
+
+				<div class="buttonGroup" id="gender">
+					<div class="buttonsBox">
+						<button type="button" class="active" id="mp_m_freemode_01">Masculino</button>
+						<button type="button" id="mp_f_freemode_01">Feminino</button>
+					</div>
+				</div>
+
+				<input class="formInput" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" value="" type="text" id="charNome" placeholder="Nome">
+				<input class="formInput" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" value="" type="text" id="charSobrenome" placeholder="Sobrenome">
+
+				<div class="buttonGroup" id="locate">
+					<div class="buttonsBox">
+						<button type="button" class="active" id="Sul">Sul</button>
+						<button type="button" id="Norte">Norte</button>
+					</div>
+				</div>
+
+				<button class="fnButton" id="createNew">CONFIRMAR</button>
+				<button class="fnButton" id="createBack">CANCELAR</button>
+			</div>
+		</div>
+
+		<div class="SpawnMessage">
+			<span>Seja Bem-Vind@!</span>
+			Um lugar <b>divertido</b> e com gente <b>incrível</b>.
+		</div>
+	</body>
+</html>

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+
+html,body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	/* display: none; */
+	cursor: default;
+	font-size: 11px;
+	overflow: hidden;
+	font-family: "Roboto";
+	box-sizing: border-box;
+	/* background: url("../web-side/imgs/background.png") no-repeat; */
+}
+
+:focus { outline: 0; }
+u { text-decoration: none; }
+::-webkit-scrollbar { width: 0; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: transparent; }
+::-webkit-scrollbar-thumb:hover { background: transparent; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#charPage, #createPage, #spawnPage {
+	top: 60px;
+	left: 60px;
+	display: none;
+	position: absolute;
+	letter-spacing: 1px;
+}
+
+#spawnPage {
+	min-width: 300px;
+}
+
+#spawnPage .spawnBox {
+	border: 0;
+	color: #9c9c9c;
+	width: 300px;
+	height: 50px;
+	display: flex;
+	font-size: 13px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.6);
+	text-transform: uppercase;
+}
+
+#spawnPage .spawnBox:hover {
+	color: #fff;
+	background: rgba(0,0,0,0.75);
+}
+
+#spawnPage #spawnNew {
+	border: 0;
+	width: 300px;
+	height: 60px;
+	display: flex;
+	color: #C8DEFF;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 6px;
+	align-items: center;
+	letter-spacing: 2px;
+	background: #4182e2;
+	text-transform: uppercase;
+	justify-content: center;
+}
+
+#charPage .charBox, #charPage .charNew {
+	margin-bottom: 10px;
+}
+
+#charPage .charNew {
+	width: 260px;
+	height: 80px;
+	display: flex;
+	padding: 5px 20px;
+	cursor: pointer;
+	color: #333;
+	background: #c8deff;
+	border-radius: 6px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#charPage .charNew p {
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+#charPage .charNew o {
+	opacity: 0.75;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+#charPage .charNew p:first-child {
+	font-weight: 700;
+}
+
+#charPage .charBox {
+	color: #9c9c9c;
+	display: flex;
+	padding: 20px 25px;
+	cursor: pointer;
+	min-width: 230px;
+	flex-direction: row;
+	align-items: center;
+	background: rgba(0,0,0,0.6);
+	border-radius: 6px;
+}
+
+#charPage .charBox .playerInfo {
+	margin-right: 10px;
+	letter-spacing: 1px;
+}
+
+#charPage .charBox .playerInfo p {
+	font-size: 13px;
+}
+
+#charPage .charBox .playerInfo p b {
+	font-weight: 600;
+}
+
+#charPage .charBox .playerInfo p:last-child {
+	padding-bottom: 0;
+}
+
+#charPage .charBox .playerButton {
+	right: 30px;
+	color: #C8DEFF;
+	font-size: 40px;
+	font-weight: 700;
+	position: absolute;
+}
+
+#createCharForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#createCharForm .formInput {
+	border: 0;
+	color: #ccc;
+	height: 50px;
+	padding: 0 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	background: rgba(0,0,0,0.6);
+}
+
+#createCharForm .formInput::placeholder {
+	color: #ccc;
+}
+
+#createCharForm .fnButton {
+	border: 0;
+	color: #ccc;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+#createCharForm .fnButton#createNew {
+	color: #C8DEFF;
+	background: #4182e2;
+}
+
+#createCharForm .fnButton#createBack {
+	color: #f9cfde;
+	background: #7c344d;
+}
+
+#createCharForm .buttonGroup {
+	width: 300px;
+	margin-top: 10px;
+}
+
+#createCharForm .buttonGroup:first-child {
+	margin-top: 0;
+}
+
+#createCharForm .buttonGroup .buttonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#createCharForm .buttonGroup .buttonsBox button {
+	border: 0;
+	color: #9c9c9c;
+	width: 145px;
+	height: 50px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	background: rgba(0,0,0,0.6);
+}
+
+#createCharForm .buttonGroup .buttonsBox button.active {
+	color: #333;
+	background: #ccc;
+}
+
+.SpawnMessage {
+	right: 50px;
+	color: #9c9c9c;
+	bottom: 50px;
+	width: 600px;
+	padding: 40px;
+	display: none;
+	font-size: 12px;
+	line-height: 22px;
+	position: absolute;
+	border-radius: 6px;
+	background: rgba(0,0,0,0.75);
+}
+
+.SpawnMessage span {
+	color: #C8DEFF;
+	display: block;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+	font-family: "Oswald",sans-serif;
+	text-transform: uppercase;
+}
+
+.SpawnMessage b {
+	color: #fff;
+	font-weight: 100;
+	text-transform: none;
+}
+
+.SpawnCreateTitle {
+	float: left;
+	width: 300px;
+	color: #C8DEFF;
+	font-size: 30px;
+	letter-spacing: 2px;
+	font-family: "Oswald",sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px #000;
+}
+
+.SpawnCreateSubtitle {
+	float: left;
+	color: #fff;
+	width: 298px;
+	height: 0px;
+	margin-left: 2px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px #000;
+}

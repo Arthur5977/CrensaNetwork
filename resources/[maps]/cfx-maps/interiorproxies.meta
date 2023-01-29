@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+	<startFrom value="3001" />
+	<filePathHash value="0" />
+	<proxies>
+		<Item>creativeWarehouseS</Item>
+		<Item>creativeWarehouseM</Item>
+		<Item>creativeWarehouseL</Item>
+		<Item>creativeTwoFloors</Item>
+		<Item>creativeThreeFloors</Item>
+		<Item>creativeSquare</Item>
+		<Item>creativeOneFloors</Item>
+		<Item>creativeLostudios</Item>
+		<Item>creativeFranklin</Item>
+		<Item>int_genstore_milo_</Item>
+		<Item>v_clinick</Item>
+	</proxies>
+</SInteriorOrderData>

@@ -1,0 +1,194 @@
+::-webkit-scrollbar { display: none; }
+
+body {
+	margin: 0px;
+	color: #ccc;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-family: "Roboto";
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container {
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: url("images/background.png");
+}
+
+.tattoo-container-1 {
+	display: flex;
+	position: relative;
+}
+.tattoo-container-2 {
+	width: 2px;
+	left: -20px;
+	height: 100%;
+	position: absolute;
+	background: rgba(64,167,247,0.3);
+}
+
+#tattoo-container {
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 500px;
+	height: 100%;
+	display: none;
+	position: fixed;
+	max-height: 100%;
+	padding: 9% 0 0 100px;
+}
+
+#tattoo-container.open {
+	opacity: 1;
+	transform: translateX(440px);
+}
+
+#items {
+	height: 640px;
+	overflow-y: scroll;
+}
+
+.column {
+	width: max-content;
+	float: left;
+}
+
+.title-area {
+	top: -35px;
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+	letter-spacing: 3px;
+}
+
+#reset, #submit {
+	float: left;
+	left: -20px;
+	color: #40a7f7;
+	font-size: 15px;
+	margin-top: 30px;
+	text-align: center;
+	padding: 20px 50px;
+	border-radius: 4px;
+	position: relative;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.2);
+}
+
+#reset:hover, #submit:hover {
+	background: rgba(17,17,17,0.9);
+}
+
+.categories {
+	gap: 1rem;
+	display: flex;
+	overflow: auto;
+	flex-direction: column;
+}
+
+.category {
+	float: left;
+	width: 72px;
+	height: 72px;
+	border-radius: 4px;
+	background: rgba(0,0,0,0.18);
+}
+
+.category:hover {
+	background: rgba(0,0,0,0.58);
+}
+
+.category:first-child {
+	margin: 0px 10px 10px 0px;
+	background: url(images/head.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:first-child:hover, .category:first-child.selected {
+	background: url(images/head.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(2) {
+	margin: 0px 10px 10px 0px;
+	background: url(images/leftarm.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(2):hover, .category:nth-child(2).selected {
+	background: url(images/leftarm.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(3) {
+	margin-bottom: 10px;
+	background: url(images/rightarm.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(3):hover, .category:nth-child(3).selected {
+	background: url(images/rightarm.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(4) {
+	margin-right: 10px;
+	background: url(images/torso.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(4):hover, .category:nth-child(4).selected {
+	background: url(images/torso.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(5) {
+	margin-right: 10px;
+	background: url(images/leftleg.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(5):hover, .category:nth-child(5).selected {
+	background: url(images/leftleg.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(6) {
+	background: url(images/rightleg.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(6):hover, .category:nth-child(6).selected {
+	background: url(images/rightleg.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category:nth-child(7) {
+	margin-top: 10px;
+	background: url(images/head.svg) no-repeat center/30px 30px,rgba(0,0,0,0.18);
+}
+
+.category:nth-child(7):hover, .category:nth-child(7).selected {
+	background: url(images/head.svg) no-repeat center/30px 30px,rgba(0,0,0,0.58);
+}
+
+.category-items {
+	float: left;
+	width: 100%;
+	margin-left: 40px;
+}
+
+.item {
+	float: left;
+	width: 63px;
+	height: 63px;
+	color: #ffff;
+	font-size: 16px;
+	line-height: 63px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0px 9px 9px 0px;
+	background: rgba(17,17,17,0.8);
+}
+
+.item:hover, .item.selected {
+	background: rgba(64,167,247,0.67);
+}
